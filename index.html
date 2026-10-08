@@ -1,0 +1,224 @@
+```html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inas Doll Store 🧸</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #fff0f7;
+            color: #444;
+        }
+
+        header {
+            background: linear-gradient(135deg, #ff8fc7, #ffb6dc);
+            color: white;
+            text-align: center;
+            padding: 30px 15px;
+        }
+
+        header h1 {
+            font-size: 35px;
+            margin-bottom: 8px;
+        }
+
+        header p {
+            font-size: 16px;
+        }
+
+        nav {
+            background: white;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 8px #ddd;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #ff4fa3;
+            font-weight: bold;
+            margin: 0 15px;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 30px auto;
+        }
+
+        .judul {
+            text-align: center;
+            color: #ff4fa3;
+            margin-bottom: 25px;
+            font-size: 28px;
+        }
+
+        .produk {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 22px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(255, 105, 180, 0.2);
+            transition: 0.3s;
+            text-align: center;
+            padding-bottom: 18px;
+        }
+
+        .card:hover {
+            transform: translateY(-7px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            color: #ff4fa3;
+            margin: 12px 0 7px;
+        }
+
+        .harga {
+            font-weight: bold;
+            color: #555;
+            margin-bottom: 12px;
+        }
+
+        .btn {
+            border: none;
+            background: #ff69b4;
+            color: white;
+            padding: 10px 18px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: #ff3f9d;
+        }
+
+        .keranjang {
+            background: white;
+            margin-top: 40px;
+            padding: 25px;
+            border-radius: 18px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+
+        .keranjang h2 {
+            color: #ff4fa3;
+            margin-bottom: 15px;
+        }
+
+        #daftarKeranjang {
+            margin-bottom: 15px;
+            line-height: 1.8;
+        }
+
+        .total {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 15px 0;
+            color: #ff4fa3;
+        }
+
+        .form-pesan {
+            display: grid;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .form-pesan input,
+        .form-pesan textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            outline: none;
+        }
+
+        .form-pesan textarea {
+            height: 90px;
+            resize: none;
+        }
+
+        footer {
+            margin-top: 50px;
+            background: #ff69b4;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .kosong {
+            color: #999;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>🧸 Inas Doll Store 🧸</h1>
+    <p>Toko Boneka Lucu & Menggemaskan 💗</p>
+</header>
+
+<nav>
+    <a href="#produk">Produk</a>
+    <a href="#keranjang">Keranjang 🛒</a>
+</nav>
+
+<div class="container">
+
+    <h2 class="judul" id="produk">✨ Koleksi Boneka ✨</h2>
+
+    <div class="produk">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1559454403-b8fb88521f11?auto=format&fit=crop&w=600&q=80">
+            <h3>Boneka Beruang</h3>
+            <p class="harga">Rp75.000</p>
+            <button class="btn" onclick="tambahKeranjang('Boneka Beruang', 75000)">
+                + Keranjang
+            </button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1563901935883-cb61fdbd3e6e?auto=format&fit=crop&w=600&q=80">
+            <h3>Boneka Kelinci</h3>
+            <p class="harga">Rp65.000</p>
+            <button class="btn" onclick="tambahKeranjang('Boneka Kelinci', 65000)">
+                + Keranjang
+            </button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1612776572997-76cc42e058c3?auto=format&fit=crop&w=600&q=80">
+            <h3>Boneka Panda</h3>
+            <p class="harga">Rp85.000</p>
+            <button class="btn" onclick="tambahKeranjang('Boneka Panda', 85000)">
+                + Keranjang
+            </button>
+        </div>
+
+        <div class="card"
+```
